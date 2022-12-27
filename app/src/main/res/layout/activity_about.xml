@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="30dp"
+        android:text="Luz"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/estadoluz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="85dp"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:text="ESTADO:"/>
+
+    <ToggleButton
+        android:id="@+id/myToggle"
+        android:text="Led"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toogle_option"
+        android:textOff=""
+        android:textOn=""
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="Inicio Automatico"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:id="@+id/bfecha"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora"
+        android:id="@+id/bhora"
+        android:layout_below="@+id/bfecha"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp"
+        android:layout_marginLeft="30dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/efecha"
+        android:layout_alignTop="@+id/bfecha"
+        android:layout_toRightOf="@+id/bfecha"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="30dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ehora"
+        android:layout_alignBottom="@+id/bhora"
+        android:layout_toRightOf="@+id/bhora"
+        android:layout_alignRight="@+id/efecha"
+        android:layout_alignEnd="@+id/efecha"
+        android:layout_marginLeft="15dp"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigator"
+        app:itemBackground="@color/purple_500"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+        android:id="@+id/btm_add"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginRight="150dp"
+        android:text="Agregar"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:onClick="onClick"/>
+
+</RelativeLayout>
